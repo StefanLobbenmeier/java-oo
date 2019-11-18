@@ -12,9 +12,9 @@ import java.util.*;
 public class Test {
   public static void main(String[] args) {
     BigInteger a = BigInteger.valueOf(1), // without OO
-               b = 2, // with OO
+               b = 2; // with OO
 
-    c1 = a.negate().add(b.multiply(b)).add(b.divide(a)), // without OO
+    BigInteger c1 = a.negate().add(b.multiply(b)).add(b.divide(a)), // without OO
     c2 = -a + b*b + b/a; // with OO
 
     if (c1.compareTo(c2)<0 || c1.compareTo(c2)>0) // without OO
